@@ -12,11 +12,13 @@
   <button id="addBtn" onclick="addQuestion()">Add Question</button>
   <div class="userInputCard">
     <button class="closeBtn" onclick="closeBtn()">+</button>
-    <h5>Question</h5>
-    <input class="userQuestion userInput" type="text" placeholder="Please Enter Your Question Here.">
+    <div class="container">
+      <h5>Question</h5>
+    <input id="userQuestion" class="userInput" type="text" placeholder="Please Enter Your Question Here.">
     <h5>Anwser</h5>
-    <input class="userAnswer userInput" type="text" placeholder="Please Enter Your Anwser Here.">
-    <button class="saveBtn">Save</button>
+    <input id="userAnswer" class="userInput" type="text" placeholder="Please Enter Your Anwser Here.">
+    <button class="saveBtn" onclick="newFlashCard()">Save</button>
+    </div>
   </div>
 </body>
 <script src="script.js"></script>
